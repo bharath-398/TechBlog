@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles — BytePulse Tech Blog</title>
+    <meta name="description"
+        content="Browse all articles on BytePulse covering AI, web development, cybersecurity, cloud computing, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" id="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Byte<span class="logo-accent">Pulse</span></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="blog.html" class="nav-link active">Articles</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="blog.html" class="nav-cta">Read Blog</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <div class="hero-bg-effects">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+        <div class="hero-grid"></div>
+    </div>
+
+    <section class="page-hero">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>All Articles</span>
+        </div>
+        <h1>Our <span class="gradient-text">Articles</span></h1>
+        <p>In-depth analysis, tutorials, and insights from the world of technology</p>
+    </section>
+
+    <!-- Filter Tabs -->
+    <div class="filter-tabs" id="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="ai">AI & ML</button>
+        <button class="filter-tab" data-filter="webdev">Web Dev</button>
+        <button class="filter-tab" data-filter="security">Security</button>
+        <button class="filter-tab" data-filter="gadgets">Gadgets</button>
+        <button class="filter-tab" data-filter="cloud">Cloud</button>
+        <button class="filter-tab" data-filter="gaming">Gaming</button>
+    </div>
+
+    <!-- Blog Posts Grid -->
+    <section class="posts-section" style="padding-top: 0;">
+        <div class="container">
+            <div class="posts-grid">
+                <!-- Post 1 -->
+                <article class="post-card blog-post-card" data-category="ai" id="blog-post-1">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80"
+                            alt="AI GPT-5" loading="lazy">
+                        <span class="post-category" style="--cat-color: #6366f1;">AI</span>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta"><span>Feb 20, 2026</span><span>•</span><span>8 min read</span></div>
+                        <h3 class="post-title">The AI Revolution: How GPT-5 is Reshaping the Developer Landscape</h3>
+                        <p class="post-excerpt">Explore how the latest generation of AI models is fundamentally changing
+                            how we write code and design systems.</p>
+                        <a href="post.html" class="post-link">Read more <svg width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg></a>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="post-card blog-post-card" data-category="webdev" id="blog-post-2">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" alt="CSS"
+                            loading="lazy">
+                        <span class="post-category" style="--cat-color: #06b6d4;">Web Dev</span>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta"><span>Feb 18, 2026</span><span>•</span><span>6 min read</span></div>
+                        <h3 class="post-title">CSS Container Queries: The Game-Changer You've Been Waiting For</h3>
+                        <p class="post-excerpt">Container queries let components respond to their parent's size, not the
+                            viewport. Here's why this changes everything.</p>
+                        <a href="post.html" class="post-link">Read more <svg width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg></a>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="post-card blog-post-card" data-category="security" id="blog-post-3">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80" alt="Security"
+                            loading="lazy">
+                        <span class="post-category" style="--cat-color: #f43f5e;">Security</span>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta"><span>Feb 15, 2026</span><span>•</span><span>10 min read</span></div>
+                        <h3 class="post-title">Zero Trust Architecture: Why Your Network Perimeter is Obsolete</h3>
+                        <p class="post-excerpt">Traditional security models assume trust inside the firewall. Zero Trust
+                            assumes breach. Learn why this shift matters.</p>
+                        <a href="post.html" class="post-link">Read more <svg width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg></a>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="post-card blog-post-card" data-category="gadgets" id="blog-post-4">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&q=80" alt="Gadgets"
+                            loading="lazy">
+                        <span class="post-category" style="--cat-color: #10b981;">Gadgets</span>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta"><span>Feb 12, 2026</span><span>•</span><span>7 min read</span></div>
+                        <h3 class="post-title">Apple Vision Pro 2: A Year Later — Was It Worth the Hype?</h3>
+                        <p class="post-excerpt">After 12 months of spatial computing, we revisit Apple's headset. Has it
+                            found its killer app?</p>
+                        <a href="post.html" class="post-link">Read more <svg width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg></a>
+                    </div>
+                </article>
+
+                <!-- Post 5 -->
+                <article class="post-card blog-post-card" data-category="ai" id="blog-post-5">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=80"
+                            alt="AI Agent" loading="lazy">
+                        <span class="post-category" style="--cat-color: #6366f1;">AI</span>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta"><span>Feb 10, 2026</span><span>•</span><span>9 min read</span></div>
+                        <h3 class="post-title">Building Your First AI Agent: A Practical Guide for Developers</h3>
+                        <p class="post-excerpt">From simple chatbots to autonomous systems — a step-by-step guide to
+                            building AI agents that actually work.</p>
+                        <a href="post.html" class="post-link">Read more <svg width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg></a>
+                    </div>
+                </article>
+
+                <!-- Post 6 -->
+                <article class="post-card blog-post-card" data-category="cloud" id="blog-post-6">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&q=80" alt="Cloud"
+                            loading="lazy">
+                        <span class="post-category" style="--cat-color: #f59e0b;">Cloud</span>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta"><span>Feb 8, 2026</span><span>•</span><span>5 min read</span></div>
+                        <h3 class="post-title">Serverless in 2026: Is It Finally Ready for Enterprise?</h3>
+                        <p class="post-excerpt">Cold starts, vendor lock-in, and debugging nightmares — have serverless
+                            platforms finally solved these issues?</p>
+                        <a href="post.html" class="post-link">Read more <svg width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg></a>
+                    </div>
+                </article>
+
+                <!-- Post 7 -->
+                <article class="post-card blog-post-card" data-category="gaming" id="blog-post-7">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600&q=80" alt="Gaming"
+                            loading="lazy">
+                        <span class="post-category" style="--cat-color: #8b5cf6;">Gaming</span>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta"><span>Feb 5, 2026</span><span>•</span><span>8 min read</span></div>
+                        <h3 class="post-title">Unreal Engine 6 Preview: Photorealism Meets Real-Time</h3>
+                        <p class="post-excerpt">Epic's next-gen engine promises film-quality graphics at 60fps. We got
+                            an early look at what's coming.</p>
+                        <a href="post.html" class="post-link">Read more <svg width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg></a>
+                    </div>
+                </article>
+
+                <!-- Post 8 -->
+                <article class="post-card blog-post-card" data-category="webdev" id="blog-post-8">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=600&q=80"
+                            alt="JavaScript" loading="lazy">
+                        <span class="post-category" style="--cat-color: #06b6d4;">Web Dev</span>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta"><span>Feb 2, 2026</span><span>•</span><span>12 min read</span></div>
+                        <h3 class="post-title">The State of JavaScript in 2026: What Every Developer Should Know</h3>
+                        <p class="post-excerpt">From TC39 proposals to runtime wars — the JavaScript ecosystem has never
+                            been more exciting or complex.</p>
+                        <a href="post.html" class="post-link">Read more <svg width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg></a>
+                    </div>
+                </article>
+
+                <!-- Post 9 -->
+                <article class="post-card blog-post-card" data-category="security" id="blog-post-9">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=600&q=80" alt="Privacy"
+                            loading="lazy">
+                        <span class="post-category" style="--cat-color: #f43f5e;">Security</span>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta"><span>Jan 28, 2026</span><span>•</span><span>6 min read</span></div>
+                        <h3 class="post-title">Privacy in the Age of AI: What Your Data Really Reveals</h3>
+                        <p class="post-excerpt">AI can infer your health, habits, and preferences from seemingly
+                            innocuous data. Here's what you need to know.</p>
+                        <a href="post.html" class="post-link">Read more <svg width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">Byte<span class="logo-accent">Pulse</span></span>
+                    </a>
+                    <p class="footer-tagline">Your daily dose of technology insights, tutorials, and industry analysis.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="GitHub">⌘</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-link" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Articles</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="blog.html">AI & ML</a></li>
+                        <li><a href="blog.html">Web Development</a></li>
+                        <li><a href="blog.html">Cybersecurity</a></li>
+                        <li><a href="blog.html">Cloud & DevOps</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">RSS Feed</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BytePulse. Crafted with ❤️ for the tech community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BytePulse — Your Daily Dose of Tech</title>
+    <meta name="description"
+        content="BytePulse is a modern tech blog covering AI, web development, gadgets, cybersecurity, and the future of technology. Stay ahead of the curve.">
+    <meta name="keywords" content="tech blog, AI, web development, gadgets, cybersecurity, programming, software">
+    <meta name="author" content="BytePulse">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" id="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Byte<span class="logo-accent">Pulse</span></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="blog.html" class="nav-link">Articles</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="blog.html" class="nav-cta">Read Blog</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <header class="hero" id="hero">
+        <div class="hero-bg-effects">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge animate-in">
+                <span class="badge-dot"></span>
+                <span>Trending in Tech</span>
+            </div>
+            <h1 class="hero-title animate-in">
+                Explore the Future of<br>
+                <span class="gradient-text">Technology</span>
+            </h1>
+            <p class="hero-subtitle animate-in">
+                Deep dives into AI, web development, gadgets, and cybersecurity.
+                Stay ahead of the curve with insights from industry experts.
+            </p>
+            <div class="hero-actions animate-in">
+                <a href="blog.html" class="btn btn-primary">
+                    <span>Explore Articles</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="about.html" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="hero-stats animate-in">
+                <div class="stat">
+                    <span class="stat-number" data-count="150">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Articles</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="50">0</span><span class="stat-plus">K</span>
+                    <span class="stat-label">Readers</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="12">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual animate-in">
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="code-dot red"></div>
+                    <div class="code-dot yellow"></div>
+                    <div class="code-dot green"></div>
+                    <span class="code-filename">future.js</span>
+                </div>
+                <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">future</span> = {
+  <span class="code-prop">ai</span>: <span class="code-string">"transforming everything"</span>,
+  <span class="code-prop">web</span>: <span class="code-string">"faster than ever"</span>,
+  <span class="code-prop">security</span>: <span class="code-string">"more critical"</span>,
+  <span class="code-prop">you</span>: <span class="code-string">"ahead of the curve"</span>
+};
+
+<span class="code-keyword">export default</span> future;</code></pre>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== FEATURED POST ========== -->
+    <section class="featured-section" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Featured</span>
+                <h2 class="section-title">Editor's Pick</h2>
+            </div>
+            <article class="featured-card" id="featured-card">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80"
+                        alt="AI Revolution" loading="lazy">
+                    <div class="featured-overlay"></div>
+                    <span class="featured-category">Artificial Intelligence</span>
+                </div>
+                <div class="featured-content">
+                    <div class="featured-meta">
+                        <span class="meta-date">📅 Feb 20, 2026</span>
+                        <span class="meta-read">⏱️ 8 min read</span>
+                    </div>
+                    <h3 class="featured-title">The AI Revolution: How GPT-5 is Reshaping the Developer Landscape</h3>
+                    <p class="featured-excerpt">
+                        Explore how the latest generation of AI models is fundamentally changing how we write code,
+                        design systems, and think about software architecture. From autonomous agents to AI-powered
+                        debugging, the future is already here.
+                    </p>
+                    <div class="featured-footer">
+                        <div class="author">
+                            <div class="author-avatar">AP</div>
+                            <div class="author-info">
+                                <span class="author-name">Alex Park</span>
+                                <span class="author-role">Senior Tech Editor</span>
+                            </div>
+                        </div>
+                        <a href="post.html" class="read-more">
+                            Read Article
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ========== CATEGORIES ========== -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Browse</span>
+                <h2 class="section-title">Explore Topics</h2>
+                <p class="section-desc">Dive into the subjects that matter most to you</p>
+            </div>
+            <div class="categories-grid">
+                <a href="blog.html" class="category-card" style="--accent: #6366f1;">
+                    <div class="category-icon">🤖</div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Neural networks, LLMs, and the future of intelligent systems</p>
+                    <span class="category-count">34 articles</span>
+                </a>
+                <a href="blog.html" class="category-card" style="--accent: #06b6d4;">
+                    <div class="category-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>React, Next.js, CSS innovations, and modern frameworks</p>
+                    <span class="category-count">28 articles</span>
+                </a>
+                <a href="blog.html" class="category-card" style="--accent: #f43f5e;">
+                    <div class="category-icon">🔒</div>
+                    <h3>Cybersecurity</h3>
+                    <p>Threat analysis, privacy tips, and security best practices</p>
+                    <span class="category-count">22 articles</span>
+                </a>
+                <a href="blog.html" class="category-card" style="--accent: #10b981;">
+                    <div class="category-icon">📱</div>
+                    <h3>Gadgets & Reviews</h3>
+                    <p>Latest devices, in-depth reviews, and buying guides</p>
+                    <span class="category-count">19 articles</span>
+                </a>
+                <a href="blog.html" class="category-card" style="--accent: #f59e0b;">
+                    <div class="category-icon">☁️</div>
+                    <h3>Cloud & DevOps</h3>
+                    <p>AWS, Docker, Kubernetes, and infrastructure as code</p>
+                    <span class="category-count">25 articles</span>
+                </a>
+                <a href="blog.html" class="category-card" style="--accent: #8b5cf6;">
+                    <div class="category-icon">🎮</div>
+                    <h3>Gaming Tech</h3>
+                    <p>Game engines, GPU benchmarks, and gaming innovations</p>
+                    <span class="category-count">15 articles</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== LATEST POSTS ========== -->
+    <section class="posts-section" id="latest-posts">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Latest</span>
+                <h2 class="section-title">Recent Articles</h2>
+                <p class="section-desc">Fresh perspectives on the tech that shapes our world</p>
+            </div>
+            <div class="posts-grid">
+                <!-- Post 1 -->
+                <article class="post-card" id="post-1">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80"
+                            alt="Web Dev Trends" loading="lazy">
+                        <span class="post-category" style="--cat-color: #06b6d4;">Web Dev</span>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta">
+                            <span>Feb 18, 2026</span>
+                            <span>•</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h3 class="post-title">CSS Container Queries: The Game-Changer You've Been Waiting For</h3>
+                        <p class="post-excerpt">Container queries let components respond to their parent's size, not the
+                            viewport. Here's why this changes everything.</p>
+                        <a href="post.html" class="post-link">
+                            Read more
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="post-card" id="post-2">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80"
+                            alt="Cybersecurity" loading="lazy">
+                        <span class="post-category" style="--cat-color: #f43f5e;">Security</span>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta">
+                            <span>Feb 15, 2026</span>
+                            <span>•</span>
+                            <span>10 min read</span>
+                        </div>
+                        <h3 class="post-title">Zero Trust Architecture: Why Your Network Perimeter is Obsolete</h3>
+                        <p class="post-excerpt">Traditional security models assume trust inside the firewall. Zero Trust
+                            assumes breach. Learn why this shift matters.</p>
+                        <a href="post.html" class="post-link">
+                            Read more
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="post-card" id="post-3">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&q=80"
+                            alt="Tech Gadgets" loading="lazy">
+                        <span class="post-category" style="--cat-color: #10b981;">Gadgets</span>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta">
+                            <span>Feb 12, 2026</span>
+                            <span>•</span>
+                            <span>7 min read</span>
+                        </div>
+                        <h3 class="post-title">Apple Vision Pro 2: A Year Later — Was It Worth the Hype?</h3>
+                        <p class="post-excerpt">After 12 months of spatial computing, we revisit Apple's headset. Has it
+                            found its killer app?</p>
+                        <a href="post.html" class="post-link">
+                            Read more
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="post-card" id="post-4">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=80" alt="AI Art"
+                            loading="lazy">
+                        <span class="post-category" style="--cat-color: #6366f1;">AI</span>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta">
+                            <span>Feb 10, 2026</span>
+                            <span>•</span>
+                            <span>9 min read</span>
+                        </div>
+                        <h3 class="post-title">Building Your First AI Agent: A Practical Guide for Developers</h3>
+                        <p class="post-excerpt">From simple chatbots to autonomous systems — a step-by-step guide to
+                            building AI agents that actually work.</p>
+                        <a href="post.html" class="post-link">
+                            Read more
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 5 -->
+                <article class="post-card" id="post-5">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&q=80"
+                            alt="Cloud Computing" loading="lazy">
+                        <span class="post-category" style="--cat-color: #f59e0b;">Cloud</span>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta">
+                            <span>Feb 8, 2026</span>
+                            <span>•</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3 class="post-title">Serverless in 2026: Is It Finally Ready for Enterprise?</h3>
+                        <p class="post-excerpt">Cold starts, vendor lock-in, and debugging nightmares — have serverless
+                            platforms finally solved these issues?</p>
+                        <a href="post.html" class="post-link">
+                            Read more
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Post 6 -->
+                <article class="post-card" id="post-6">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600&q=80" alt="Gaming"
+                            loading="lazy">
+                        <span class="post-category" style="--cat-color: #8b5cf6;">Gaming</span>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta">
+                            <span>Feb 5, 2026</span>
+                            <span>•</span>
+                            <span>8 min read</span>
+                        </div>
+                        <h3 class="post-title">Unreal Engine 6 Preview: Photorealism Meets Real-Time</h3>
+                        <p class="post-excerpt">Epic's next-gen engine promises film-quality graphics at 60fps. We got
+                            an early look at what's coming.</p>
+                        <a href="post.html" class="post-link">
+                            Read more
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <div class="posts-cta">
+                <a href="blog.html" class="btn btn-primary">
+                    View All Articles
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NEWSLETTER ========== -->
+    <section class="newsletter-section" id="newsletter">
+        <div class="container">
+            <div class="newsletter-card">
+                <div class="newsletter-bg">
+                    <div class="newsletter-orb newsletter-orb-1"></div>
+                    <div class="newsletter-orb newsletter-orb-2"></div>
+                </div>
+                <div class="newsletter-content">
+                    <span class="newsletter-icon">📬</span>
+                    <h2 class="newsletter-title">Stay in the Loop</h2>
+                    <p class="newsletter-desc">Get the latest articles, tutorials, and tech insights delivered straight
+                        to your inbox every week. No spam, ever.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" placeholder="Enter your email address" required id="newsletter-email"
+                                aria-label="Email address">
+                            <button type="submit" class="btn btn-primary" id="newsletter-submit">
+                                Subscribe
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="newsletter-note">Join 10,000+ developers. Unsubscribe anytime.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">Byte<span class="logo-accent">Pulse</span></span>
+                    </a>
+                    <p class="footer-tagline">Your daily dose of technology insights, tutorials, and industry analysis.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="GitHub">⌘</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-link" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Articles</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="blog.html">AI & ML</a></li>
+                        <li><a href="blog.html">Web Development</a></li>
+                        <li><a href="blog.html">Cybersecurity</a></li>
+                        <li><a href="blog.html">Cloud & DevOps</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">RSS Feed</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BytePulse. Crafted with ❤️ for the tech community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
